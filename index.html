@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    
-    <section id="main">
 
+<body>
+    <header id="cabecalho">
+        <div class="titulos">
+            <h2>Bem vindo, Wellington !</h2>
+            <h1>O que você quer cozinhar hoje ?</h1>
+        </div>
+        <div class="imagem">
+            <img src="media/img/folhas.png" alt="Folhas de jardim botânico.">
+        </div>
+    </header>
+
+    <section id="main">
+        <header>
+            <h1>Receitas do dia</h1>
+        </header>
+        <div class="card">
+            <div class="img">
+                <img src="media/img/img_receita.png" alt="Imagem da receita.">
+            </div>
+            <div class="informacoes">
+                <div class="dados_receita">
+                    <div class="nome_receita">
+                        <h2>Frango agridoce</h2>
+                    </div>
+                    <div class="quantidade">
+                        <h3>11 ingredientes</h3>
+                    </div>
+                    <div class="tags">
+                        <span>Doce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script type="module" src="model/buscaDadosApi.js"></script>
 </body>
+
 </html>
