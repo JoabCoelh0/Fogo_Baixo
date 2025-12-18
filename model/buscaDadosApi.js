@@ -9,3 +9,5 @@ async function fetchRecitas() {
 }
 
 fetchRecitas()
+
+modulo.export = dadosReceitas;
