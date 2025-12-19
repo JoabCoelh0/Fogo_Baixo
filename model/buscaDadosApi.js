@@ -3,6 +3,11 @@ async function fetchRecitas() {
         let receitas = await fetch("https://api-receitas-pi.vercel.app/receitas/todas")
         let dadosReceitas = await receitas.json()
         console.log(dadosReceitas);
+        for(let valor of Object.values(dadosReceitas)){
+
+            console.log(valor);
+        }
+        
     } catch (error) {
         console.error(error)
     }
@@ -10,4 +15,4 @@ async function fetchRecitas() {
 
 fetchRecitas()
 
-modulo.export = dadosReceitas;
+//modulo.export = dadosReceitas;
