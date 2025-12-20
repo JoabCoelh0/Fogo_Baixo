@@ -4,7 +4,7 @@ async function fetchRecitas() {
     try {
         const main = document.querySelector('#main')
         
-        let receitas = await fetch("https://api-receitas-pi.vercel.app/receitas/todas")
+        let receitas = await fetch("https://api-receitas-pi.vercel.app/receitas/todas?page=1&limit=100")
 
         let dadosReceitas = await receitas.json()
         console.log(dadosReceitas.items);   
